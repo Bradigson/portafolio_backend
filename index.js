@@ -22,7 +22,7 @@ app.use(cors({
     origin:whitelist
 }));
 
-app.use('/', routers);
+app.use('/api/v1', routers);
 
 const port = app.get("port");
 
